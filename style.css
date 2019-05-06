@@ -1,6 +1,6 @@
 /* 
 author: Kotaro Abe
-http://kotaroabe.com/ 
+https://kotaroabe.com/ 
 */
 
 .FrutigerLTStd-Bold { font-family: FrutigerLTStd-Bold; }
@@ -27,7 +27,38 @@ a {
 body {
 	margin: 0% 0% 0% 0%;
 	line-height: 0px;
-	color: #000;
+}
+#bgimage {
+	position: fixed;
+	top: 20vh;
+	height: 60vh;
+	max-width: 60vw;
+	z-index: -10;
+	background-color: transparent;
+	overflow: hidden;
+}
+
+.centralised {
+	padding-left: 5vw;
+	margin: 0 auto;
+	width: 50vw;
+	
+	-webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5 ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+}
+
+.sunfrapol, .dearLondon, .liminallight, .spin, .lines, .energygiftmini, .unsettled, .madeintenryu, .ambientcamera {
+	display: none;
+}
+
+#main {
+	width: 60vw;
+	margin: auto;
+}
+#projects {
+	
 }
 p {
 	color: #000;
@@ -37,10 +68,10 @@ p {
 	width: 500px;
 }
 div#header {
-	z-index: 1;
-	position: absolute;
+	z-index: 2;
+	position: fixed;
 	top: 5%;
-	left: 5%;
+	left: 20%;
 }
 @media screen {
 body>div#header {
@@ -55,10 +86,10 @@ body>div#header {
 	overflow: auto;
 }
 div#headerR {
-	z-index: 1;
-	position: absolute;
+	z-index: 2;
+	position: fixed;
 	top: 5%;
-	right: 5%;
+	right: 20%;
 }
 @media screen {
 body>div#headerR {
@@ -123,8 +154,8 @@ p.space {
 	line-height: 2rem;
 }
 p.menu {
-	font-family: FrutigerLTStd-Roman, serif;
-	font-size: 1.3rem;
+	font-family: FrutigerLTStd-Roman, FrutigerLTStd-Roman, serif;
+	font-size: 1.4rem;
 	text-align: left;
 	line-height: 2.8rem;
 	letter-spacing: 0.04rem;
@@ -139,6 +170,7 @@ p.menu a {
 }
 p.menu a:hover {
 	background-color: transparent;
+	border-bottom: 2px solid #fff;
 }
 p.nameLarge {
 	font-family: FrutigerLTStd-Light, sans-serif;
@@ -161,7 +193,7 @@ p.nameLarge {
 p.nameLarge a {
 }
 p.nameLarge :hover {
-	opacity: 0.3;
+	opacity: 0.1;s
 	
 	transition-timing-function: ease;
 	-webkit-transition: 0.3s;
@@ -170,9 +202,17 @@ p.nameLarge :hover {
 	-ms-transition: 0.3s;
 	transition: 0.3s;
 }
+p.nameLarge span {
+	font-family: FrutigerLTStd-Roman, sans-serif;
+	text-align: center;
+	padding-right: 5%;
+	font-weight: 300;
+	font-size: 1.1vw;
+	letter-spacing: 0.004vw;
+	line-height: 10vw;
+}
 
 p.footer {
-	color: #222;
 	font-family: FrutigerLTStd-Roman, Monospace;
 	font-size: 1.1rem;
 	text-align: right;
@@ -196,8 +236,8 @@ p.cap {
 	font-family: FrutigerLTStd-Light, sans-serif;
 	font-size: 1.4rem;
 	text-align: left;
-	padding-right: 5%;
-	padding-left: 5%;
+	padding-right: 20%;
+	padding-left: 20%;
 	line-height: 2rem;
 	letter-spacing: 0.05rem;
 	margin-left: auto;
@@ -210,11 +250,24 @@ img {
 	vertical-align: bottom;
 }
 div#footer {
-	z-index: -1;
+	z-index: 3;
 	position: absolute;
 	bottom: 1%;
 	left: 0;
 	width: 100%;
+}
+p.refM {
+	margin: 0;
+	width: 100%;
+	font-family: FrutigerLTStd-Light, sans-serif;
+	font-size: 1.4em;
+	font-weight: 200;
+	text-align: left;
+	line-height: 2rem;
+	letter-spacing: 0.05rem;
+}
+p.refM span {
+	font-family: FrutigerLTStd-Bold;
 }
 p.ref {
 	/*width: 100%;*/
@@ -222,8 +275,8 @@ p.ref {
 	font-size: 1.4em;
 	font-weight: 200;
 	text-align: left;
-	padding-right: 5%;
-	padding-left: 5%;
+	padding-right: 20%;
+	padding-left: 20%;
 	line-height: 2rem;
 	letter-spacing: 0.05rem;
 	margin-left: auto;
@@ -231,75 +284,6 @@ p.ref {
 	-webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
     column-count: 2;
-}
-p.refl {
-	/*width: 100%;*/
-	font-family: FrutigerLTStd-Light, sans-serif;
-	font-size: 1.4rem;
-	text-align: right;
-	padding-right: 5%;
-	padding-left: 5%;
-	line-height: 4rem;
-	letter-spacing: 0.05rem;
-	margin-left: auto;
-	margin-right: auto;
-}
-p.refl span {
-	font-family: FrutigerLTStd-Roman, Monospace;
-}
-p.refl a{
-}
-p.refl a:hover{
-	color: transparent;
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-o-transition: 0.5s;
-	-ms-transition: 0.5s;
-	transition: 0.5s;
-}
-p.refl1 {
-	/*width: 100%;*/
-	font-family: FrutigerLTStd-Light, sans-serif;
-	font-size: 1.4rem;
-	text-align: right;
-	padding-right: 40%;
-	padding-left: 5%;
-	line-height: 4rem;
-	letter-spacing: 0.05rem;
-	margin-left: auto;
-	margin-right: auto;
-}
-p.refl1 a{
-}
-p.refl1 a:hover{
-	color: transparent;
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-o-transition: 0.5s;
-	-ms-transition: 0.5s;
-	transition: 0.5s;
-}
-p.refl2 {
-	/*width: 100%;*/
-	font-family: FrutigerLTStd-Light, sans-serif;
-	font-size: 1.4rem;
-	text-align: left;
-	padding-right: 25%;
-	padding-left: 25%;
-	line-height: 4rem;
-	letter-spacing: 0.05rem;
-	margin-left: auto;
-	margin-right: auto;
-}
-p.refl2 a{
-}
-p.refl2 a:hover{
-	color: transparent;
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-o-transition: 0.5s;
-	-ms-transition: 0.5s;
-	transition: 0.5s;
 }
 
 @media screen {
@@ -315,6 +299,51 @@ body>div#footer {
 	overflow: auto;
 }
 
+#bio {
+	position: relative;
+	z-index: 3;
+	background: #ffffff;
+	width: 100%;
+	min-height: 100vh;
+	padding-top: 40px;
+}
+
+#bio .left {
+	position: absolute;
+	width: 49%;
+	height: auto;
+}
+
+#bio .right {
+	position: absolute;
+	width: 49%;
+	height: auto;
+	margin-left: 51%;
+}
+
+#bio .below {
+	transform: translateY(calc(60vw * 49.5 / 100));
+}
+
+#bio .back {
+	positoin: absolute;
+	margin: 0;
+	width: 10%;
+	font-family: FrutigerLTStd-Light, sans-serif;
+	font-size: 1.4em;
+	font-weight: 200;
+	text-align: left;
+	line-height: 2rem;
+	letter-spacing: 0.05rem;
+	
+	margin-left: calc(100% + 20px);
+}
+
+
+
+
+
+
 
 
 
@@ -323,6 +352,9 @@ body>div#footer {
 */
 
 @media only screen and (max-width : 640px) {
+	#main {
+		width: 100vw;
+	}
 div#header {
 	z-index: 1;
 	position: static;
@@ -330,7 +362,7 @@ div#header {
 	padding-top: 3%;
 	left: -1px;
 	padding-left: 5%;
-	width: 100%;
+	width: 95%;
 	background: transparent;
 }
 div#headerR {
@@ -346,6 +378,27 @@ img {
 	max-width: 100%;
 	height: auto;
 	width /***/: auto;
+}
+	
+#bgimage {
+	position: fixed;
+	top: 40vh;
+	height: 30vh;
+	max-width: 90vw;
+	z-index: -10;
+	background-color: transparent;
+	overflow: hidden;
+}
+	
+.centralised {
+	padding-left: 10vw;
+	margin: 0 auto;
+	width: 80vw;
+	
+	-webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5 ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
 }
 
 p.image {
@@ -442,6 +495,7 @@ p.menu {
 	font-size: 1.3rem;
 	line-height: 2.5rem;
 	letter-spacing: 0.05rem;
+	padding-left: 5%;
 }
 p.name {
 	font-size: 1.6rem;
@@ -469,6 +523,13 @@ p.nameLarge {
 	
 	word-wrap: break-word;
 }
+p.nameLarge span {
+	font-size: 3vw;		
+}
+p.nameLarge span:after {
+	content: ' \A ';	
+	white-space: pre;
+}
 p.footer {
 	font-size: 0.8rem;
 	letter-spacing: 0.02rem;
@@ -480,12 +541,8 @@ p.space {
 	
 p.ref {
 	text-align: left;
-	padding-right: 5%;
-	padding-left: 5%;
 	line-height: 2rem;
 	letter-spacing: 0.05rem;
-	margin-left: auto;
-	margin-right: auto;
 	-webkit-column-count: 1; /* Chrome, Safari, Opera */
     -moz-column-count: 1; /* Firefox */
     column-count: 1;
@@ -495,4 +552,46 @@ p.refl, p.refl1, p.refl2 {
 	line-height: 2.8rem;
 }
 	
+
+#bio {
+	position: relative;
+	z-index: 3;
+	background-color: #ffffff;
+	width: 90%;
+	min-height: 100vh;
+	height: 310vh;
+	padding-left: 5%;
+	padding-top: 40px;
+}
+
+#bio .left {
+	position: relative;
+	width: 90%;
+	height: auto;
+	margin-left: 0%;
+}
+
+#bio .right {
+	position: relative;
+	width: 90%;
+	height: auto;
+	margin-left: 0%;
+}
+	
+#bio .below {
+	transform: translateY(0);
+}
+
+#bio .back {
+	positoin: absolute;
+	margin: 0;
+	width: 30%;
+	font-family: FrutigerLTStd-Light, sans-serif;
+	font-size: 1.4em;
+	font-weight: 200;
+	text-align: left;
+	line-height: 2rem;
+	letter-spacing: 0.05rem;
+	
+	transform: translateY(-40px);
 }
